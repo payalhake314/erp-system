@@ -1,7 +1,7 @@
 package com.lambda.controllers;
 
-import com.lambda.dao.StudentDAO;
-import com.lambda.models.Student;
+// import com.lambda.dao.StudentDAO;
+// import com.lambda.models.Student;
 
 import java.util.List;
 import java.util.Map;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @CrossOrigin
 @RestController
 public class StudentCtrl {
-    @Autowired
+   /*  @Autowired
     StudentDAO stuDao;
 
     @GetMapping("/students")
@@ -52,6 +52,6 @@ public class StudentCtrl {
         String[] resp = new String[2];
         resp = stuDao.createStudent(student);
         return new JSONObject().put(resp[0], resp[1]).toMap();
-    }
+    } */
 
 }

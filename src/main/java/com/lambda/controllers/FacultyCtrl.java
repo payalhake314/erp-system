@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-import com.lambda.dao.FacultyDAO;
-import com.lambda.models.Faculty;
+// import com.lambda.dao.FacultyDAO;
+// import com.lambda.models.Faculty;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @RestController
 public class FacultyCtrl {
-    @Autowired
+    /* @Autowired
     FacultyDAO dao;
 
     @GetMapping("/faculties")
@@ -58,6 +58,6 @@ public class FacultyCtrl {
         JSONObject jobject = new JSONObject();
         jobject.put(resp[0], resp[1]);
         return jobject.toMap();
-    }
+    } */
 
 }

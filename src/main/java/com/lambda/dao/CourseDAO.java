@@ -14,7 +14,7 @@ public class CourseDAO {
     @PostConstruct
     public void createTables() {
         int code = jdbcTmp.update(
-                "create table if not exists courses( id varchar(36) primary key, faculty_id varchar(36), course_name varchar(40), credits tinyint, description varchar(255), foreign key (faculty_id) references faculties(id) );");
+                "create table if not exists courses( id varchar(36) primary key, faculty_id varchar(36), course_name varchar(40), credits tinyint, description varchar(255), foreign key (faculty_id) references users(userid) );");
         if (code != 0) {
             System.out.println("Course table created");
         } else {
